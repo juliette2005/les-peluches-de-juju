@@ -3,7 +3,7 @@ body {
   font-family: 'Poppins', sans-serif;
   margin: 0;
   padding: 0;
-  background-color: #F3E6F6; /* Violet très clair, doux */
+  background-color: #F3E6F6; /* Violet clair pour une ambiance douce */
   color: #5A5A5A; /* Gris doux pour le texte */
 }
 
@@ -12,17 +12,18 @@ header {
   color: white;
   text-align: center;
   padding: 3rem;
-  border-bottom: 5px solid #D8B3D4; /* Violet plus clair pour le bas du header */
+  border-bottom: 5px solid #D8B3D4; /* Violet plus clair */
 }
 
 header h1 {
-  font-size: 3rem;
+  font-size: 3.5rem;
   font-family: 'Pacifico', cursive; /* Police mignonne et manuscrite */
   margin-bottom: 1rem;
 }
 
 header p {
   font-size: 1.3rem;
+  font-style: italic;
 }
 
 nav {
@@ -43,10 +44,10 @@ nav li {
 }
 
 nav a {
-  color: #5F2A82; /* Violet foncé pour les liens */
+  color: #5F2A82; /* Violet foncé */
   text-decoration: none;
   font-weight: bold;
-  font-size: 1.1rem;
+  font-size: 1.2rem;
   text-transform: uppercase;
   padding: 0.5rem;
   border-radius: 20px;
@@ -59,11 +60,11 @@ nav a:hover {
 }
 
 main {
-  padding: 2rem 3rem;
+  padding: 3rem 5rem;
 }
 
 .peluche-section {
-  background-color: #FFFFFF; /* Blanc cassé pour le fond des sections */
+  background-color: #FFFFFF; /* Fond blanc cassé */
   margin-bottom: 2rem;
   padding: 2rem;
   border-radius: 12px;
@@ -89,7 +90,7 @@ main {
   height: auto;
   display: block;
   margin: 1.5rem auto;
-  border-radius: 50%; /* Bordures arrondies pour les images */
+  border-radius: 50%; /* Bordures arrondies */
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
