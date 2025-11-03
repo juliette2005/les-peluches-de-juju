@@ -1,0 +1,119 @@
+/* --- Style général --- */
+body {
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #F3E6F6; /* Violet très clair, doux */
+  color: #5A5A5A; /* Gris doux pour le texte */
+}
+
+header {
+  background-color: #9B5F96; /* Violet pastel */
+  color: white;
+  text-align: center;
+  padding: 3rem;
+  border-bottom: 5px solid #D8B3D4; /* Violet plus clair pour le bas du header */
+}
+
+header h1 {
+  font-size: 3rem;
+  font-family: 'Pacifico', cursive; /* Police mignonne et manuscrite */
+  margin-bottom: 1rem;
+}
+
+header p {
+  font-size: 1.3rem;
+}
+
+nav {
+  background-color: #D8B3D4; /* Violet clair */
+  padding: 1.5rem;
+  text-align: center;
+}
+
+nav ul {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+  padding: 0;
+}
+
+nav li {
+  margin: 0 2rem;
+}
+
+nav a {
+  color: #5F2A82; /* Violet foncé pour les liens */
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 1.1rem;
+  text-transform: uppercase;
+  padding: 0.5rem;
+  border-radius: 20px;
+  transition: background-color 0.3s ease;
+}
+
+nav a:hover {
+  background-color: #9B5F96; /* Violet pastel au survol */
+  color: white;
+}
+
+main {
+  padding: 2rem 3rem;
+}
+
+.peluche-section {
+  background-color: #FFFFFF; /* Blanc cassé pour le fond des sections */
+  margin-bottom: 2rem;
+  padding: 2rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.peluche-section:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+}
+
+.peluche-section h2 {
+  color: #5F2A82; /* Violet foncé pour les titres */
+  font-size: 2.5rem;
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+.peluche-section img {
+  width: 100%;
+  max-width: 350px;
+  height: auto;
+  display: block;
+  margin: 1.5rem auto;
+  border-radius: 50%; /* Bordures arrondies pour les images */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+footer {
+  background-color: #9B5F96; /* Violet pastel */
+  text-align: center;
+  padding: 1.5rem;
+  color: white;
+  font-size: 1rem;
+  border-top: 5px solid #D8B3D4;
+}
+
+footer p {
+  margin: 0;
+}
+
+@media (max-width: 768px) {
+  /* Responsivité pour petits écrans */
+  nav ul {
+    flex-direction: column;
+    padding: 1rem 0;
+  }
+
+  nav li {
+    margin: 1rem 0;
+  }
+}
