@@ -1,23 +1,24 @@
+
 /* --- Style général --- */
 body {
   font-family: 'Poppins', sans-serif;
   margin: 0;
   padding: 0;
-  background-color: #F3E6F6;
-  color: #5A5A5A;
+  background-color: #F3E6F6; /* Violet clair pour une ambiance douce */
+  color: #5A5A5A; /* Gris doux pour le texte */
 }
 
 header {
-  background-color: #9B5F96;
+  background-color: #9B5F96; /* Violet pastel */
   color: white;
   text-align: center;
   padding: 3rem;
-  border-bottom: 5px solid #D8B3D4;
+  border-bottom: 5px solid #D8B3D4; /* Violet plus clair */
 }
 
 header h1 {
   font-size: 3.5rem;
-  font-family: 'Pacifico', cursive;
+  font-family: 'Pacifico', cursive; /* Police mignonne et manuscrite */
   margin-bottom: 1rem;
 }
 
@@ -27,7 +28,7 @@ header p {
 }
 
 nav {
-  background-color: #D8B3D4;
+  background-color: #D8B3D4; /* Violet clair */
   padding: 1.5rem;
   text-align: center;
 }
@@ -44,7 +45,7 @@ nav li {
 }
 
 nav a {
-  color: #5F2A82;
+  color: #5F2A82; /* Violet foncé */
   text-decoration: none;
   font-weight: bold;
   font-size: 1.2rem;
@@ -55,7 +56,7 @@ nav a {
 }
 
 nav a:hover {
-  background-color: #9B5F96;
+  background-color: #9B5F96; /* Violet pastel au survol */
   color: white;
 }
 
@@ -64,7 +65,7 @@ main {
 }
 
 .peluche-section {
-  background-color: #FFFFFF;
+  background-color: #FFFFFF; /* Fond blanc cassé */
   margin-bottom: 2rem;
   padding: 2rem;
   border-radius: 12px;
@@ -78,46 +79,24 @@ main {
 }
 
 .peluche-section h2 {
-  color: #5F2A82;
+  color: #5F2A82; /* Violet foncé pour les titres */
   font-size: 2.5rem;
   text-align: center;
-  margin-bottom: 1.5rem;
+  margin-bottom: 1rem;
 }
 
-/* --- IMAGES EN LIGNE --- */
-.peluche-images {
-  display: flex;
-  justify-content: center;
-  flex-wrap: nowrap; /* IMPORTANT : reste sur une seule ligne */
-  gap: 1.5rem;
-  margin-bottom: 1.5rem;
-  overflow-x: auto; /* défilement horizontal si trop d'images */
-}
-
-.peluche-images img {
-  width: 200px;
-  height: 200px;
-  object-fit: cover;
-  border-radius: 15px;
+.peluche-section img {
+  width: 100%;
+  max-width: 350px;
+  height: auto;
+  display: block;
+  margin: 1.5rem auto;
+  border-radius: 50%; /* Bordures arrondies */
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  transition: transform 0.3s ease;
 }
 
-.peluche-images img:hover {
-  transform: scale(1.05);
-}
-
-/* --- DESCRIPTION PLUS GROSSE --- */
-.peluche-description {
-  font-size: 1.3rem;   /* texte plus grand */
-  line-height: 1.7;    /* plus lisible */
-  text-align: center;  /* centré */
-  margin-top: 1rem;
-}
-
-/* --- FOOTER --- */
 footer {
-  background-color: #9B5F96;
+  background-color: #9B5F96; /* Violet pastel */
   text-align: center;
   padding: 1.5rem;
   color: white;
@@ -125,8 +104,12 @@ footer {
   border-top: 5px solid #D8B3D4;
 }
 
-/* --- RESPONSIVE --- */
+footer p {
+  margin: 0;
+}
+
 @media (max-width: 768px) {
+  /* Responsivité pour petits écrans */
   nav ul {
     flex-direction: column;
     padding: 1rem 0;
@@ -134,14 +117,5 @@ footer {
 
   nav li {
     margin: 1rem 0;
-  }
-
-  .peluche-images img {
-    width: 150px;
-    height: 150px;
-  }
-
-  .peluche-description {
-    font-size: 1.2rem;
   }
 }
