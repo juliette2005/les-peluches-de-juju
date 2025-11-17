@@ -81,57 +81,25 @@ main {
   color: #5F2A82; /* Violet foncé pour les titres */
   font-size: 2.5rem;
   text-align: center;
-  margin-bottom: 1rem;
+  margin-bottom: 1.5rem;
 }
 
-.peluche-section img {
-  width: 100%;
-  max-width: 350px;
-  height: auto;
-  display: block;
-  margin: 1.5rem auto;
-  border-radius: 50%; /* Bordures arrondies */
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-}
-
-footer {
-  background-color: #9B5F96; /* Violet pastel */
-  text-align: center;
-  padding: 1.5rem;
-  color: white;
-  font-size: 1rem;
-  border-top: 5px solid #D8B3D4;
-}
-
-footer p {
-  margin: 0;
-}
-
-@media (max-width: 768px) {
-  /* Responsivité pour petits écrans */
-  nav ul {
-    flex-direction: column;
-    padding: 1rem 0;
-  }
-
-  nav li {
-    margin: 1rem 0;
-    /* Conteneur d'images horizontal */
+/* --- NOUVEL AJOUT POUR ALIGNER LES IMAGES --- */
 .peluche-images {
   display: flex;
   justify-content: center;
-  flex-wrap: wrap;      /* Passe en plusieurs lignes si l'écran est petit */
-  gap: 1.5rem;          /* Espace entre les images */
+  flex-wrap: wrap;       /* Permet de passer à la ligne si écran petit */
+  gap: 1.5rem;           /* Espace entre les images */
   margin-bottom: 1.5rem;
 }
 
 .peluche-images img {
-  width: 200px;         /* Taille uniforme */
+  width: 200px;
   height: 200px;
-  object-fit: cover;    /* Les images restent jolies même si elles ne sont pas carrées */
-  border-radius: 15px;  /* coins arrondis */
-  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  object-fit: cover;     /* Coupe proprement les images */
+  border-radius: 15px;   /* Coins arrondis */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
 }
 
-  }
-}
+.peluche-images img:
