@@ -116,22 +116,5 @@ footer p {
 
   nav li {
     margin: 1rem 0;
-    /* Conteneur d'images horizontal */
-.peluche-images {
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;      /* Passe en plusieurs lignes si l'écran est petit */
-  gap: 1.5rem;          /* Espace entre les images */
-  margin-bottom: 1.5rem;
-}
-
-.peluche-images img {
-  width: 200px;         /* Taille uniforme */
-  height: 200px;
-  object-fit: cover;    /* Les images restent jolies même si elles ne sont pas carrées */
-  border-radius: 15px;  /* coins arrondis */
-  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-}
-
   }
 }
