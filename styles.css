@@ -1,3 +1,4 @@
+
 /* --- Style général --- */
 body {
   font-family: 'Poppins', sans-serif;
@@ -99,10 +100,10 @@ main {
 }
 
 .peluche-images img {
-  width: 180px;           /* largeur fixe */
-  height: 180px;          /* hauteur fixe */
+  width: 220px;           /* légèrement plus grandes */
+  height: 220px;          /* même hauteur pour garder la rondeur */
   border-radius: 50%;     /* rend l'image ronde */
-  object-fit: cover;      /* garde les proportions en remplissant le cercle */
+  object-fit: cover;      /* remplit le cercle sans déformation */
   display: block;
   box-shadow: 0 4px 8px rgba(0,0,0,0.1);
 }
@@ -173,7 +174,7 @@ footer p {
   }
 
   .peluche-images img {
-    width: 100%;  /* sur mobile, images prennent toute la largeur */
+    width: 100%;  /* sur mobile, chaque image prend toute la largeur */
     height: auto;
   }
 }
