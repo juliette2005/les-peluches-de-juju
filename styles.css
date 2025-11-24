@@ -116,9 +116,8 @@ main {
 
 /* --- Images --- */
 .peluche-section img {
-  width: 100%;
-  max-width: 350px;
-  height: auto;
+  max-width: 350px;  /* limite la taille max */
+  height: auto;      /* garde les proportions originales */
   display: block;
   border-radius: 50%;
   margin: 0;
