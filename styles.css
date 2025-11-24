@@ -90,13 +90,20 @@ main {
   font-family: 'Fredoka One', cursive;
 }
 
-/* --- Conteneur d'images en ligne --- */
+/* --- Conteneur d'images (2 images par ligne) --- */
 .peluche-images {
   display: flex;
-  justify-content: center;
   flex-wrap: wrap;
   gap: 1.5rem;
-  margin-bottom: 1.5rem;
+  justify-content: center;
+}
+
+.peluche-images img {
+  width: calc(50% - 0.75rem); /* exactement 2 images par ligne */
+  height: auto;                /* garde les proportions */
+  display: block;
+  border-radius: 50%;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
 }
 
 /* --- Descriptions (police Pacifico) --- */
@@ -113,16 +120,6 @@ main {
 #surimi img { border: 5px solid #D64545; }
 #gros-chat img { border: 5px solid #B3B3B3; }
 #dieu-courge img { border: 5px solid #F2E7D8; }
-
-/* --- Images --- */
-.peluche-section img {
-  max-width: 350px;  /* limite la taille max */
-  height: auto;      /* garde les proportions originales */
-  display: block;
-  border-radius: 50%;
-  margin: 0;
-  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-}
 
 /* --- FOOTER --- */
 footer {
@@ -172,5 +169,9 @@ footer p {
 
   main {
     padding: 2rem;
+  }
+
+  .peluche-images img {
+    width: 100%;   /* chaque image prend toute la largeur sur mobile */
   }
 }
