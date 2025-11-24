@@ -90,7 +90,7 @@ main {
   font-family: 'Fredoka One', cursive;
 }
 
-/* --- Conteneur d'images (2 images par ligne, même taille, rondes) --- */
+/* --- Conteneur d'images (2 images par ligne, rondes, plus grandes) --- */
 .peluche-images {
   display: flex;
   flex-wrap: wrap;
@@ -99,11 +99,10 @@ main {
 }
 
 .peluche-images img {
-  width: calc((100% / 2) - 20px); /* exactement 2 images par ligne */
-  max-width: 220px;                /* taille maximale pour grand écran */
-  height: 220px;                   /* même hauteur */
-  border-radius: 50%;              /* rend l'image ronde */
-  object-fit: cover;               /* remplissage sans déformation */
+  width: 250px;           /* largeur plus grande */
+  height: 250px;          /* même hauteur pour garder la rondeur */
+  border-radius: 50%;     /* rend l'image ronde */
+  object-fit: cover;      /* remplissage sans déformation */
   display: block;
 }
 
