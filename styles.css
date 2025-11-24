@@ -90,26 +90,26 @@ main {
   font-family: 'Fredoka One', cursive;
 }
 
-/* --- Conteneur d'images (2 images par ligne, rondes) --- */
+/* --- Conteneur d'images (2 images par ligne, rondes, taille réduite) --- */
 .peluche-images {
   display: flex;
   flex-wrap: wrap;
-  gap: 2rem;                /* espace entre les images */
+  gap: 2rem;                 /* espace entre les images */
   justify-content: center;
 }
 
 .peluche-images img {
-  width: calc(50% - 1rem);  /* exactement 2 images par ligne */
-  aspect-ratio: 1 / 1;      /* carré parfait pour un cercle */
-  object-fit: cover;        /* remplissage de l'image sans déformation */
+  width: calc(48% - 1rem);   /* légèrement plus petites que 50% pour réduire la taille */
+  aspect-ratio: 1 / 1;       /* carré parfait pour un cercle */
+  object-fit: cover;         /* remplissage de l'image sans déformation */
   display: block;
-  border-radius: 50%;       /* cercle parfait */
+  border-radius: 50%;        /* cercle parfait */
   box-shadow: 0 4px 8px rgba(0,0,0,0.1);
   transition: transform 0.3s ease;
 }
 
 .peluche-images img:hover {
-  transform: scale(1.05);   /* petit effet au survol */
+  transform: scale(1.05);    /* petit effet au survol */
 }
 
 /* --- Descriptions (police Pacifico) --- */
